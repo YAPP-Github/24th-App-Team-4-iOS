@@ -19,7 +19,8 @@ public enum Feature: String, CaseIterable {
     case pokit = "Pokit"
     case categoryDetail = "CategoryDetail"
     case search = "Search"
-    
+    case setting = "Setting"
+
     public var target: Target {
         return .makeTarget(
             name: "Feature\(self.rawValue)",
@@ -32,7 +33,7 @@ public enum Feature: String, CaseIterable {
             ]
         )
     }
-    
+
     public var demoTarget: Target {
         return .makeTarget(
             name: "Feature\(self.rawValue)Demo",
